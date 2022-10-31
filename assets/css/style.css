@@ -24,7 +24,7 @@ h1 {
     text-align: end;
     float: right;
     padding-right: 10px;
-    
+    margin-left: -10px;
 }
 
 
@@ -44,7 +44,8 @@ nav a {
     border-bottom: 1px solid #f2f2f2;
     text-decoration: none;
     margin: 15px;
-
-    
 }
 
+section {
+    border:#011126 solid 2px;
+}
