@@ -1,5 +1,6 @@
 body {
-    
+    justify-items:auto;
+    background-color: #407344;
 }
 
 header {
@@ -11,41 +12,137 @@ header {
     color: #f2f2f2;
     height: 50px;
     border-bottom: 5px solid #8c8265;
-    
+    width: auto;
 }
 
 h1 {
     background-color: #407344;
-    font-family: Helvetica, sans-serif;
-    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:lighter;
     font-size: 200%;
-    height: 40px;
+    letter-spacing: 2.5px;
+    height: 35px;
     width: 400px;
     text-align: end;
     float: right;
     padding-right: 10px;
     margin-left: -10px;
+    padding-top: 10px;
 }
 
 
 nav ul {
     display: flex;
     justify-content: space-between;
-
+    font-family: Arial, Helvetica, sans-serif;
     min-width: 300px;
     list-style-type: none;
     letter-spacing: 2px;
-    ;
+    
 }
 
 nav a {
     color: #f2f2f2f2;
-    font-weight: bold;
+    font-weight: lighter;
     border-bottom: 1px solid #f2f2f2;
     text-decoration: none;
     margin: 15px;
 }
 
 section {
-    border:#011126 solid 2px;
+    position: relative;
+    
 }
+
+.text-block h2 {
+    position: absolute;
+    right:40px;
+    top:175px;
+    background-color: #f2f2f2;
+    color: #011126;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:normal;
+    letter-spacing: 2px;
+    font-size:larger;
+
+}
+section img {
+    width: 100%;
+    height: 250px;
+    top: 0;
+    left: 0;
+}
+
+main {
+    display: flex;
+}
+
+/* Not sure about this stuff yet
+main div {
+    display:grid;
+    width: 540px;
+    grid-template-columns: 120px 120px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.box {
+
+}
+*/
+
+aside {
+    display: block;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 0px;
+    padding-left: 0px;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+    font-weight: bold;
+    background-color: #407344;
+    color: #f2f2f2;
+}
+
+aside p1 {
+    display: flex;
+    flex-direction: column;
+    border-right:#f2f2f2 solid 2px;
+    margin: 10px;
+    height: 200px;
+}
+
+aside p2 {
+    display: flex;
+    flex-direction: column;
+    border-right: #f2f2f2 solid 2px;
+    margin: 10px;
+    height: 200px;
+}
+
+aside p3 {
+    display: flex;
+    flex-direction: column;
+    border-right: #f2f2f2 solid 2px;
+    margin: 10px;
+    height: 200px;
+}
+
+p {
+    flex-wrap:wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    
+}
+ /*Not sure about this stuff yet
+div {
+    flex-wrap: wrap;
+}
+*/
