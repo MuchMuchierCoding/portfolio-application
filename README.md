@@ -16,7 +16,7 @@ The project utilized Agile Project Management to create a from-scratch web appli
 ![Image of the body and footer](.//assets/images/Portfolio-Page5.png)
 ## Authors and Acknowledgement
 
-This project was create from scratch by Amanda Paul. 
+This project was create from scratch by Amanda Paul. Thank you to Trilogy Education Services for inspiration gathered from the provided mock-up for the challenge assignment. 
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
