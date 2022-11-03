@@ -1,7 +1,7 @@
 ## portfolio-application
 # Portfolio-Application
 
-[Site-Refactor](https://amandapaul1223.github.io/site-refactor/) from scratch web application demonstrating flexbox, media queries, and CSS variables.  
+[Portfolio Application](https://amandapaul1223.github.io/portfolio-application/) from scratch web application demonstrating flexbox, media queries, and CSS variables.  
 
 ## Description
 
