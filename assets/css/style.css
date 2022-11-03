@@ -1,84 +1,116 @@
 body {
+    display:flex;
+    flex-direction: column;
     justify-items:auto;
-    background-color: #407344;
+    background-color: black;
 }
 
 header {
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.name-and-photo img {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1%;
-    background-color: #011126;
-    color: #f2f2f2;
-    height: 50px;
-    border-bottom: 5px solid #8c8265;
-    width: auto;
+    flex-direction: column;
+    position:relative;
+    width: 30%;
 }
 
 h1 {
-    background-color: #407344;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight:lighter;
-    font-size: 200%;
-    letter-spacing: 2.5px;
-    height: 35px;
-    width: 400px;
-    text-align: end;
-    float: right;
-    padding-right: 10px;
-    margin-left: -10px;
-    padding-top: 10px;
-}
-
-
-nav ul {
     display: flex;
+    flex-direction: column;
+    color: #f2f2f2;
+    font: 400% "Courier New", Courier, monospace;
+    letter-spacing: 50px;
+    text-align: center;
+}
+
+nav {
     justify-content: space-between;
-    font-family: Arial, Helvetica, sans-serif;
-    min-width: 300px;
-    list-style-type: none;
     letter-spacing: 2px;
-    
+    list-style-type: none;
+    text-align: center;
+    background-color: black;
+    padding-bottom: 25px;
+    padding-top: 25px;
 }
 
-nav a {
-    color: #f2f2f2f2;
-    font-weight: lighter;
-    border-bottom: 1px solid #f2f2f2;
+li {
+    display:inline-block;
+}
+
+a {
     text-decoration: none;
-    margin: 15px;
+    font: Arial, Helvetica, sans-serif;
+    margin: 50px;
+    color:#f2f2f2;
+    font-size:x-large;
+    font-weight: bold;
 }
 
-section {
+.section {
+   display: flex;
+   padding: 10px;
+}
+
+.left {
+    width: 25%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 20px;
+    background-color: #735b4d;
+}
+ .left h2 {
+    height: 70%;
+    border-right: solid #d9cec5;
+    padding: 10px;
+    letter-spacing: 10px;
+    padding-top: 20px;
+ }
+
+ h2 {
+    font-family:Arial, Helvetica, sans-serif;
+ }
+
+/*everything before this is done*/
+
+.right {
+    width:75%;
+    padding: 20px;
+    background-color: #d9cec5;
+    flex-wrap: wrap;
+    line-height: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 50px;
+}
+
+.project {
+    border: solid 5px yellow;
+    margin: 5px;
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-block {
     position: relative;
-    
 }
 
 .text-block h2 {
+    font-family: 'Courier New', Courier, monospace;
     position: absolute;
     right:40px;
     top:175px;
     background-color: #f2f2f2;
     color: #011126;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight:normal;
-    letter-spacing: 2px;
-    font-size:larger;
-
-}
-section img {
-    width: 100%;
-    height: 250px;
-    top: 0;
-    left: 0;
+    
 }
 
 main {
-    display: flex;
+    
 }
 
 /* Not sure about this stuff yet
@@ -115,6 +147,7 @@ aside p1 {
     border-right:#f2f2f2 solid 2px;
     margin: 10px;
     height: 200px;
+    justify-content: flex-start;
 }
 
 aside p2 {
@@ -141,8 +174,36 @@ p {
     word-spacing: 5px;
     
 }
+
+@media screen and <max-width: 900> {
+    header {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 550px) {
+    .section {
+        flex-direction: column;
+    }
+}
+
  /*Not sure about this stuff yet
 div {
     flex-wrap: wrap;
 }
+*/
+
+/*
+GIVEN I need to sample a potential employee's previous work
+WHEN I load their portfolio
+THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
+WHEN I click one of the links in the navigation
+THEN the UI scrolls to the corresponding section
+WHEN I click on the link to the section about their work
+THEN the UI scrolls to a section with titled images of the developer's applications
+WHEN I am presented with the developer's first application
+THEN that application's image should be larger in size than the others
+WHEN I click on the images of the applications
+THEN I am taken to that deployed application
+WHEN I resize the page or view the site on various screens and devices
+THEN I am presented with a responsive layout that adapts to my viewport
 */
