@@ -96,7 +96,6 @@ li a {
     width:75%;
     padding: 20px;
     background-color: #d9cec5;
-    flex-wrap: wrap;
     text-indent: 50px;
 }
 
@@ -123,27 +122,16 @@ li a {
 /*Main Project Elements*/
 .main-project {
     position:relative;
+    width: 100%;
 }
 
 .main-project img {
-    display: block;
-    /*width:100%;*/
-    margin-left: 0;   
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
     border:#735b4d solid;
-}
-
-.text-block1 {
-    position: absolute;
-    flex-wrap:wrap;
-    top: 600px;
-    left: 0px;
-    background-color: black;
-    color:#f2f2f2;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 15px;
-    padding-left: 40px;
-    font-size: xx-large;
 }
 
 /*Sub Project Elements*/
